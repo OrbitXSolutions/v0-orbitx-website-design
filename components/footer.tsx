@@ -68,16 +68,21 @@ export function Footer() {
             transition={{ duration: 0.6 }}
             className="md:col-span-2"
           >
-            <Link href="/" className="flex items-center gap-3 mb-6">
+            <Link href="/" className="flex items-center gap-2 mb-6">
               <Image
-                src="/logo.svg"
+                src="/logo.png"
                 alt="OrbitX Solutions"
-                width={48}
-                height={48}
-                className="w-12 h-12 brightness-0 invert"
+                width={40}
+                height={40}
+                className="w-10 h-10"
               />
-              <span className="text-2xl font-bold text-white tracking-tight">
-                OrbitX Solutions
+              <span className="text-2xl font-brand font-semibold tracking-tight">
+                <span className="text-[#3AA29E]">Orbit</span>
+                <span className="text-[#5B9BED]">X</span>
+                <span className="ml-1">
+                  <span className="text-[#E87652]">Solu</span>
+                  <span className="text-[#9B7ABF]">tions</span>
+                </span>
               </span>
             </Link>
             <p className="text-slate-400 text-sm leading-relaxed max-w-sm mb-6">

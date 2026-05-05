@@ -47,9 +47,12 @@ export function Navbar() {
             className="w-10 h-10"
           />
           <span className="text-2xl font-brand font-semibold tracking-tight">
-            <span className="text-[#5B9BED]">Orbit</span>
-            <span className="text-[#E87652]">X</span>
-            <span className="text-slate-700 ml-1">Solutions</span>
+            <span className="text-[#3AA29E]">Orbit</span>
+            <span className="text-[#5B9BED]">X</span>
+            <span className="ml-1">
+              <span className="text-[#E87652]">Solu</span>
+              <span className="text-[#9B7ABF]">tions</span>
+            </span>
           </span>
         </Link>
 
