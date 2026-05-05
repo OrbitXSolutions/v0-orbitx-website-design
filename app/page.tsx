@@ -8,6 +8,7 @@ import { Technologies } from "@/components/technologies";
 import { About } from "@/components/about";
 import { Contact } from "@/components/contact";
 import { Footer } from "@/components/footer";
+import { WhatsAppButton } from "@/components/whatsapp-button";
 
 export default function HomePage() {
   return (
@@ -22,6 +23,7 @@ export default function HomePage() {
       <About />
       <Contact />
       <Footer />
+      <WhatsAppButton />
     </main>
   );
 }

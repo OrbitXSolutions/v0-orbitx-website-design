@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 
 const socialLinks = [
   {
@@ -56,7 +57,7 @@ const footerLinks = [
 
 export function Footer() {
   return (
-    <footer className="bg-card border-t border-border">
+    <footer className="bg-foreground text-background">
       <div className="max-w-7xl mx-auto px-6 py-16">
         <div className="grid md:grid-cols-4 gap-12">
           {/* Brand */}
@@ -67,16 +68,21 @@ export function Footer() {
             transition={{ duration: 0.6 }}
             className="md:col-span-2"
           >
-            <Link href="/" className="flex items-center gap-2 mb-6">
-              <div className="w-10 h-10 rounded-lg bg-foreground flex items-center justify-center">
-                <span className="text-background font-bold text-xl">O</span>
-              </div>
-              <span className="text-xl font-semibold text-foreground tracking-tight">
+            <Link href="/" className="flex items-center gap-3 mb-6">
+              <Image
+                src="/logo.svg"
+                alt="OrbitX Solutions"
+                width={40}
+                height={40}
+                className="w-10 h-10 brightness-0 invert"
+              />
+              <span className="text-xl font-semibold text-background tracking-tight">
                 OrbitX Solutions
               </span>
             </Link>
-            <p className="text-muted-foreground text-sm leading-relaxed max-w-sm mb-6">
-              Dubai-based software house delivering custom web platforms, AI solutions, and enterprise systems for businesses across the UAE.
+            <p className="text-background/70 text-sm leading-relaxed max-w-sm mb-6">
+              Dubai-based software house delivering custom web platforms, AI
+              solutions, and enterprise systems for businesses across the UAE.
             </p>
             <div className="flex items-center gap-4">
               {socialLinks.map((social) => (
@@ -85,7 +91,7 @@ export function Footer() {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-muted-foreground hover:text-foreground hover:bg-accent/20 transition-all"
+                  className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center text-background/70 hover:text-background hover:bg-background/20 transition-all"
                   aria-label={social.name}
                 >
                   {social.icon}
@@ -103,13 +109,15 @@ export function Footer() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
             >
-              <h3 className="text-foreground font-semibold mb-4">{group.title}</h3>
+              <h3 className="text-background font-semibold mb-4">
+                {group.title}
+              </h3>
               <ul className="space-y-3">
                 {group.links.map((link) => (
                   <li key={link.label}>
                     <Link
                       href={link.href}
-                      className="text-muted-foreground hover:text-foreground transition-colors text-sm"
+                      className="text-background/70 hover:text-background transition-colors text-sm"
                     >
                       {link.label}
                     </Link>
@@ -121,11 +129,11 @@ export function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="mt-16 pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-muted-foreground text-sm">
-            © {new Date().getFullYear()} OrbitX Solutions. All rights reserved.
+        <div className="mt-16 pt-8 border-t border-background/10 flex flex-col md:flex-row items-center justify-between gap-4">
+          <p className="text-background/50 text-sm">
+            {new Date().getFullYear()} OrbitX Solutions. All rights reserved.
           </p>
-          <p className="text-muted-foreground text-sm">
+          <p className="text-background/50 text-sm">
             Made with precision in Dubai, UAE
           </p>
         </div>

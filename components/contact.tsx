@@ -6,10 +6,10 @@ import Link from "next/link";
 
 export function Contact() {
   return (
-    <section id="contact" className="py-24 md:py-32 relative overflow-hidden">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-accent/10 via-background to-background" />
-      
+    <section
+      id="contact"
+      className="py-24 md:py-32 relative overflow-hidden bg-gradient-to-b from-background to-muted/30"
+    >
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -17,7 +17,7 @@ export function Contact() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <span className="text-accent text-sm font-medium uppercase tracking-wider">
+          <span className="text-primary text-sm font-medium uppercase tracking-wider">
             Get Started
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mt-4 mb-6 text-balance">
@@ -26,8 +26,8 @@ export function Contact() {
             Digital Platform
           </h2>
           <p className="text-muted-foreground text-lg mb-10 max-w-2xl mx-auto">
-            Ready to transform your business with a custom digital solution? 
-            Get in touch with our team to discuss your project.
+            Ready to transform your business with a custom digital solution? Get
+            in touch with our team to discuss your project.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -35,7 +35,7 @@ export function Contact() {
               href="https://wa.me/971504887551"
               target="_blank"
               rel="noopener noreferrer"
-              className="group px-8 py-4 bg-foreground text-background rounded-lg font-medium text-base hover:bg-foreground/90 transition-all flex items-center gap-2 w-full sm:w-auto justify-center"
+              className="group px-8 py-4 bg-primary text-primary-foreground rounded-xl font-medium text-base hover:bg-primary/90 transition-all flex items-center gap-2 w-full sm:w-auto justify-center shadow-lg shadow-primary/20"
             >
               Start Your Project
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -44,7 +44,7 @@ export function Contact() {
               href="https://wa.me/971504887551"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-4 bg-secondary text-foreground rounded-lg font-medium text-base hover:bg-secondary/80 transition-all border border-border flex items-center gap-2 w-full sm:w-auto justify-center"
+              className="px-8 py-4 bg-background text-foreground rounded-xl font-medium text-base hover:bg-muted transition-all border border-border flex items-center gap-2 w-full sm:w-auto justify-center shadow-sm"
             >
               <MessageCircle className="w-4 h-4" />
               WhatsApp Contact
@@ -63,9 +63,18 @@ export function Contact() {
           <p className="text-muted-foreground text-sm mb-8">
             Trusted by businesses across the UAE
           </p>
-          <div className="flex flex-wrap items-center justify-center gap-8 opacity-50">
-            {["Enterprise", "Government", "E-commerce", "Healthcare", "Finance"].map((sector) => (
-              <span key={sector} className="text-muted-foreground font-medium">
+          <div className="flex flex-wrap items-center justify-center gap-8">
+            {[
+              "Enterprise",
+              "Government",
+              "E-commerce",
+              "Healthcare",
+              "Finance",
+            ].map((sector) => (
+              <span
+                key={sector}
+                className="text-muted-foreground/70 font-medium text-sm"
+              >
                 {sector}
               </span>
             ))}
