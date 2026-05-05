@@ -42,6 +42,7 @@
 @theme inline {
   --font-sans: 'Inter', 'Geist', system-ui, sans-serif;
   --font-mono: 'Geist Mono', monospace;
+  --font-brand: 'Poppins', 'Inter', system-ui, sans-serif;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);

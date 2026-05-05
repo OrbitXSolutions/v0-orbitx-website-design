@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Geist_Mono } from "next/font/google";
+import { Inter, Geist_Mono, Poppins } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
@@ -11,6 +11,12 @@ const inter = Inter({
 const geistMono = Geist_Mono({
   subsets: ["latin"],
   variable: "--font-mono",
+});
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-brand",
 });
 
 export const metadata: Metadata = {
@@ -99,7 +105,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="light bg-white">
       <body
-        className={`${inter.variable} ${geistMono.variable} font-sans antialiased bg-white text-slate-900`}
+        className={`${inter.variable} ${geistMono.variable} ${poppins.variable} font-sans antialiased bg-white text-slate-900`}
       >
         {children}
         {process.env.NODE_ENV === "production" && <Analytics />}

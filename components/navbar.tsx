@@ -38,17 +38,18 @@ export function Navbar() {
       }`}
     >
       <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-3">
+        <Link href="/" className="flex items-center gap-2">
           <Image
-            src="/logo.svg"
+            src="/logo.png"
             alt="OrbitX Solutions"
-            width={56}
-            height={56}
-            className="w-14 h-14"
-            style={{ lineHeight: 2 }}
+            width={40}
+            height={40}
+            className="w-10 h-10"
           />
-          <span className="text-3xl font-bold text-[#5B9BED] tracking-tight">
-            OrbitX
+          <span className="text-2xl font-brand font-semibold tracking-tight">
+            <span className="text-[#5B9BED]">Orbit</span>
+            <span className="text-[#E87652]">X</span>
+            <span className="text-slate-700 ml-1">Solutions</span>
           </span>
         </Link>
 
