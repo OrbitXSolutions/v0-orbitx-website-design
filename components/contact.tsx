@@ -8,8 +8,11 @@ export function Contact() {
   return (
     <section
       id="contact"
-      className="py-24 md:py-32 relative overflow-hidden bg-gradient-to-b from-background to-muted/30"
+      className="py-24 md:py-32 relative overflow-hidden bg-slate-50"
     >
+      {/* Subtle pattern */}
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,_#E2E8F0_1px,_transparent_1px),linear-gradient(to_bottom,_#E2E8F0_1px,_transparent_1px)] bg-[size:3rem_3rem] opacity-30" />
+      
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -17,38 +20,38 @@ export function Contact() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <span className="text-primary text-sm font-medium uppercase tracking-wider">
+          <span className="text-[#E87652] text-sm font-medium uppercase tracking-wider">
             Get Started
           </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mt-4 mb-6 text-balance">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mt-4 mb-6 text-balance">
             Let&apos;s Build Your Next
             <br />
-            Digital Platform
+            <span className="text-[#5B9BED]">Digital Platform</span>
           </h2>
-          <p className="text-muted-foreground text-lg mb-10 max-w-2xl mx-auto">
+          <p className="text-slate-600 text-lg mb-10 max-w-2xl mx-auto">
             Ready to transform your business with a custom digital solution? Get
             in touch with our team to discuss your project.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link
-              href="https://wa.me/971504887551"
+            <a
+              href="https://wa.me/971504887551?text=Hi%20OrbitX%2C%20I%27d%20like%20to%20discuss%20a%20project"
               target="_blank"
               rel="noopener noreferrer"
-              className="group px-8 py-4 bg-primary text-primary-foreground rounded-xl font-medium text-base hover:bg-primary/90 transition-all flex items-center gap-2 w-full sm:w-auto justify-center shadow-lg shadow-primary/20"
+              className="group px-8 py-4 bg-[#5B9BED] text-white rounded-xl font-medium text-base hover:bg-[#4A8AD8] transition-all flex items-center gap-2 w-full sm:w-auto justify-center shadow-lg shadow-[#5B9BED]/20"
             >
               Start Your Project
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </Link>
-            <Link
+            </a>
+            <a
               href="https://wa.me/971504887551"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-4 bg-background text-foreground rounded-xl font-medium text-base hover:bg-muted transition-all border border-border flex items-center gap-2 w-full sm:w-auto justify-center shadow-sm"
+              className="px-8 py-4 bg-white text-slate-900 rounded-xl font-medium text-base hover:bg-slate-100 transition-all border border-slate-200 flex items-center gap-2 w-full sm:w-auto justify-center shadow-sm"
             >
-              <MessageCircle className="w-4 h-4" />
+              <MessageCircle className="w-4 h-4 text-[#25D366]" />
               WhatsApp Contact
-            </Link>
+            </a>
           </div>
         </motion.div>
 
@@ -58,24 +61,25 @@ export function Contact() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="mt-16 pt-16 border-t border-border"
+          className="mt-16 pt-16 border-t border-slate-200"
         >
-          <p className="text-muted-foreground text-sm mb-8">
+          <p className="text-slate-500 text-sm mb-8">
             Trusted by businesses across the UAE
           </p>
           <div className="flex flex-wrap items-center justify-center gap-8">
             {[
-              "Enterprise",
-              "Government",
-              "E-commerce",
-              "Healthcare",
-              "Finance",
+              { name: "Enterprise", color: "#5B9BED" },
+              { name: "Government", color: "#3AA29E" },
+              { name: "E-commerce", color: "#E87652" },
+              { name: "Healthcare", color: "#9B7ABF" },
+              { name: "Finance", color: "#5B9BED" },
             ].map((sector) => (
               <span
-                key={sector}
-                className="text-muted-foreground/70 font-medium text-sm"
+                key={sector.name}
+                className="font-medium text-sm"
+                style={{ color: sector.color }}
               >
-                {sector}
+                {sector.name}
               </span>
             ))}
           </div>

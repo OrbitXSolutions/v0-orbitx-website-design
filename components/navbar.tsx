@@ -42,11 +42,11 @@ export function Navbar() {
           <Image
             src="/logo.svg"
             alt="OrbitX Solutions"
-            width={48}
-            height={48}
-            className="w-12 h-12"
+            width={56}
+            height={56}
+            className="w-14 h-14"
           />
-          <span className="text-2xl font-bold text-slate-900 tracking-tight">
+          <span className="text-3xl font-bold text-[#5B9BED] tracking-tight">
             OrbitX
           </span>
         </Link>
@@ -95,7 +95,7 @@ export function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-white/98 backdrop-blur-lg border-b border-slate-200"
+            className="md:hidden bg-white border-b border-slate-200"
           >
             <div className="px-6 py-4 flex flex-col gap-4">
               {navLinks.map((link) => (

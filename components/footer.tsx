@@ -57,7 +57,7 @@ const footerLinks = [
 
 export function Footer() {
   return (
-    <footer className="bg-foreground text-background">
+    <footer className="bg-slate-900 text-white">
       <div className="max-w-7xl mx-auto px-6 py-16">
         <div className="grid md:grid-cols-4 gap-12">
           {/* Brand */}
@@ -72,15 +72,15 @@ export function Footer() {
               <Image
                 src="/logo.svg"
                 alt="OrbitX Solutions"
-                width={40}
-                height={40}
-                className="w-10 h-10 brightness-0 invert"
+                width={48}
+                height={48}
+                className="w-12 h-12 brightness-0 invert"
               />
-              <span className="text-xl font-semibold text-background tracking-tight">
+              <span className="text-2xl font-bold text-white tracking-tight">
                 OrbitX Solutions
               </span>
             </Link>
-            <p className="text-background/70 text-sm leading-relaxed max-w-sm mb-6">
+            <p className="text-slate-400 text-sm leading-relaxed max-w-sm mb-6">
               Dubai-based software house delivering custom web platforms, AI
               solutions, and enterprise systems for businesses across the UAE.
             </p>
@@ -91,7 +91,7 @@ export function Footer() {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center text-background/70 hover:text-background hover:bg-background/20 transition-all"
+                  className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:bg-slate-700 transition-all"
                   aria-label={social.name}
                 >
                   {social.icon}
@@ -109,7 +109,7 @@ export function Footer() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
             >
-              <h3 className="text-background font-semibold mb-4">
+              <h3 className="text-white font-semibold mb-4">
                 {group.title}
               </h3>
               <ul className="space-y-3">
@@ -117,7 +117,7 @@ export function Footer() {
                   <li key={link.label}>
                     <Link
                       href={link.href}
-                      className="text-background/70 hover:text-background transition-colors text-sm"
+                      className="text-slate-400 hover:text-white transition-colors text-sm"
                     >
                       {link.label}
                     </Link>
@@ -129,11 +129,11 @@ export function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="mt-16 pt-8 border-t border-background/10 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-background/50 text-sm">
+        <div className="mt-16 pt-8 border-t border-slate-800 flex flex-col md:flex-row items-center justify-between gap-4">
+          <p className="text-slate-500 text-sm">
             {new Date().getFullYear()} OrbitX Solutions. All rights reserved.
           </p>
-          <p className="text-background/50 text-sm">
+          <p className="text-slate-500 text-sm">
             Made with precision in Dubai, UAE
           </p>
         </div>
