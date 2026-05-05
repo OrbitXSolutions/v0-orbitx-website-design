@@ -45,6 +45,7 @@ export function Navbar() {
             width={56}
             height={56}
             className="w-14 h-14"
+            style={{ lineHeight: 2 }}
           />
           <span className="text-3xl font-bold text-[#5B9BED] tracking-tight">
             OrbitX
