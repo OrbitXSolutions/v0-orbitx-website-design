@@ -11,6 +11,7 @@ const projects = [
     description:
       "Connects pet owners with veterinary services through a clean and accessible digital experience.",
     image: "/images/projects/zoolker.jpg",
+    link: "https://www.zoolker.com",
     color: "#3AA29E",
   },
   {
@@ -19,6 +20,7 @@ const projects = [
     description:
       "A trusted platform for gold checking services with a simple and professional interface.",
     image: "/images/projects/gold-checker.jpg",
+    link: "https://www.goldchecker.ae/",
     color: "#E87652",
   },
   {
@@ -27,6 +29,7 @@ const projects = [
     description:
       "Corporate website showcasing fitout services and business capabilities.",
     image: "/images/projects/mkl-fitout.jpg",
+    link: "https://mklfitout.com",
     color: "#5B9BED",
   },
   {
@@ -35,15 +38,8 @@ const projects = [
     description:
       "A modern platform presenting training programs and coaching services.",
     image: "/images/projects/amr-fitness.jpg",
+    link: "https://www.amr-fitness.com",
     color: "#E87652",
-  },
-  {
-    name: "Honna La Honna",
-    category: "Community Platform",
-    description:
-      "A structured and elegant digital platform focused on community engagement.",
-    image: "/images/projects/honna.jpg",
-    color: "#9B7ABF",
   },
   {
     name: "Rawad Al Tameer",
@@ -51,6 +47,7 @@ const projects = [
     description:
       "Professional site presenting construction services and company expertise.",
     image: "/images/projects/rawad.jpg",
+    link: "https://rawadaltameer.com",
     color: "#5B9BED",
   },
   {
@@ -58,13 +55,25 @@ const projects = [
     category: "E-commerce Store",
     description: "Elegant online boutique for fashion and product display.",
     image: "/images/projects/eleva.jpg",
+    link: "https://www.eleva-boutique.net/",
     color: "#9B7ABF",
   },
   {
-    name: "Makhit Al Dar",
-    category: "Tailoring Services",
-    description: "Service website for tailoring and fashion business.",
+    name: "Honna La Honna",
+    category: "Community Platform",
+    description:
+      "A structured and elegant digital platform focused on community engagement.",
+    image: "/images/projects/honna.jpg",
+    link: "https://www.honnalahonna.com/",
+    color: "#9B7ABF",
+  },
+  {
+    name: "No.5 Boutique",
+    category: "Clothes E-Store",
+    description:
+      "Discover premium handcrafted abayas, hijabs, and perfumes with elegant modest fashion from No.5 Boutique Dubai.",
     image: "/images/projects/makhit.jpg",
+    link: "https://www.no5boutique.com/",
     color: "#3AA29E",
   },
   {
@@ -72,6 +81,7 @@ const projects = [
     category: "E-commerce Platform",
     description: "Lifestyle product platform with modern shopping experience.",
     image: "/images/projects/wedoo.jpg",
+    link: "https://wedoohub.com",
     color: "#5B9BED",
   },
   {
@@ -79,6 +89,7 @@ const projects = [
     category: "Home Services Platform",
     description: "Marketplace connecting users with home service providers.",
     image: "/images/projects/wehandu.jpg",
+    link: "https://wehandu.com",
     color: "#E87652",
   },
 ];
@@ -139,13 +150,16 @@ export function Projects() {
                 <p className="text-slate-600 text-sm leading-relaxed mb-4">
                   {project.description}
                 </p>
-                <button 
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-sm font-medium transition-colors"
                   style={{ color: project.color }}
                 >
                   View Project
                   <ExternalLink className="w-4 h-4" />
-                </button>
+                </a>
               </div>
             </motion.div>
           ))}
