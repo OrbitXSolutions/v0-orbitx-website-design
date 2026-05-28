@@ -12,7 +12,7 @@ export function WhatsAppButton() {
       className="fixed bottom-6 right-6 z-50"
     >
       <Link
-        href="https://wa.me/971504887551"
+        href="https://wa.me/971509700715"
         target="_blank"
         rel="noopener noreferrer"
         className="group flex items-center gap-3"

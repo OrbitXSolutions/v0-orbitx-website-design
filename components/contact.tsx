@@ -35,7 +35,7 @@ export function Contact() {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
-              href="https://wa.me/971504887551?text=Hi%20OrbitX%2C%20I%27d%20like%20to%20discuss%20a%20project"
+              href="https://wa.me/971509700715?text=Hi%20OrbitX%2C%20I%27d%20like%20to%20discuss%20a%20project"
               target="_blank"
               rel="noopener noreferrer"
               className="group px-8 py-4 bg-[#5B9BED] text-white rounded-xl font-medium text-base hover:bg-[#4A8AD8] transition-all flex items-center gap-2 w-full sm:w-auto justify-center shadow-lg shadow-[#5B9BED]/20"
@@ -44,7 +44,7 @@ export function Contact() {
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </a>
             <a
-              href="https://wa.me/971504887551"
+              href="https://wa.me/971509700715"
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-4 bg-white text-slate-900 rounded-xl font-medium text-base hover:bg-slate-100 transition-all border border-slate-200 flex items-center gap-2 w-full sm:w-auto justify-center shadow-sm"

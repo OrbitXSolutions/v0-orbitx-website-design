@@ -56,7 +56,7 @@ export function Hero() {
               className="flex flex-col sm:flex-row items-start gap-4"
             >
               <a
-                href="https://wa.me/971504887551?text=Hi%20OrbitX%2C%20I%27d%20like%20to%20discuss%20a%20project"
+                href="https://wa.me/971509700715?text=Hi%20OrbitX%2C%20I%27d%20like%20to%20discuss%20a%20project"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group px-8 py-4 bg-[#5B9BED] text-white rounded-xl font-medium text-base hover:bg-[#4A8AD8] transition-all flex items-center gap-2 shadow-lg shadow-[#5B9BED]/20"

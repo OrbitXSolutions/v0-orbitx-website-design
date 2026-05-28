@@ -71,7 +71,7 @@ export function Navbar() {
 
         <div className="hidden md:flex items-center gap-4">
           <a
-            href="https://wa.me/971504887551?text=Hi%20OrbitX%2C%20I%27d%20like%20to%20discuss%20a%20project"
+            href="https://wa.me/971509700715?text=Hi%20OrbitX%2C%20I%27d%20like%20to%20discuss%20a%20project"
             target="_blank"
             rel="noopener noreferrer"
             className="px-5 py-2.5 bg-[#25D366] text-white rounded-lg font-medium text-sm hover:bg-[#20BD5A] transition-colors shadow-sm flex items-center gap-2"
@@ -114,7 +114,7 @@ export function Navbar() {
                 </Link>
               ))}
               <a
-                href="https://wa.me/971504887551?text=Hi%20OrbitX%2C%20I%27d%20like%20to%20discuss%20a%20project"
+                href="https://wa.me/971509700715?text=Hi%20OrbitX%2C%20I%27d%20like%20to%20discuss%20a%20project"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setIsMobileMenuOpen(false)}
