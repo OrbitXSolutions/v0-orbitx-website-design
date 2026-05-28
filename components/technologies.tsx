@@ -35,11 +35,11 @@ export function Technologies() {
             Tech Stack
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mt-4 mb-6 text-balance">
-            Modern Technologies
+            Production-Ready Technology Stack
           </h2>
           <p className="text-slate-600 max-w-2xl mx-auto text-lg">
-            We use cutting-edge tools and frameworks to build future-proof
-            solutions.
+            We select technologies based on long-term reliability,
+            maintainability, and business-scale performance.
           </p>
         </motion.div>
 

@@ -20,19 +20,19 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "OrbitX Solutions | Software House in Dubai",
+  title: "Software House Dubai | OrbitX Solutions UAE",
   description:
-    "Custom web development, AI-powered platforms, enterprise systems, and digital transformation solutions in the UAE. Building scalable digital platforms for modern businesses.",
+    "OrbitX Solutions is a Dubai-based software house delivering custom websites, enterprise systems, and scalable digital platforms for UAE businesses.",
   keywords: [
     "software house Dubai",
-    "web development UAE",
-    "AI solutions UAE",
-    "enterprise systems Dubai",
-    "digital transformation UAE",
-    "custom software Dubai",
-    "Next.js development",
+    "web development company UAE",
+    "custom software development Dubai",
+    "business systems development UAE",
+    "enterprise web solutions Dubai",
+    "custom web applications UAE",
+    "enterprise software house UAE",
+    "Next.js development Dubai",
     ".NET development UAE",
-    "Dubai tech company",
   ],
   authors: [{ name: "OrbitX Solutions" }],
   creator: "OrbitX Solutions",
@@ -47,9 +47,9 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "OrbitX Solutions | Software House in Dubai",
+    title: "Software House Dubai | OrbitX Solutions UAE",
     description:
-      "Custom web development, AI-powered platforms, enterprise systems, and digital transformation solutions in the UAE.",
+      "Custom websites, business systems, and enterprise web solutions built in Dubai for UAE organizations.",
     url: "https://orbitx.ae",
     siteName: "OrbitX Solutions",
     locale: "en_AE",
@@ -65,9 +65,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "OrbitX Solutions | Software House in Dubai",
+    title: "Software House Dubai | OrbitX Solutions UAE",
     description:
-      "Custom web development, AI-powered platforms, enterprise systems, and digital transformation solutions in the UAE.",
+      "Custom websites, business systems, and enterprise web solutions built in Dubai for UAE organizations.",
     images: ["/og-image.jpg"],
   },
   robots: {
@@ -82,11 +82,9 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: [
-      { url: "/favicon.ico", sizes: "any" },
-      { url: "/logo.svg", type: "image/svg+xml" },
-    ],
-    apple: "/logo.svg",
+    icon: [{ url: "/favicon.ico", sizes: "any" }],
+    shortcut: "/favicon.ico",
+    apple: "/logo.png",
   },
 };
 

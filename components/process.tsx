@@ -16,7 +16,7 @@ const steps = [
     number: "01",
     title: "Discovery",
     description:
-      "We dive deep into understanding your business, goals, and challenges to create the perfect solution.",
+      "Stakeholder sessions to understand objectives, constraints, user roles, and operational requirements.",
     color: "#5B9BED",
   },
   {
@@ -24,7 +24,7 @@ const steps = [
     number: "02",
     title: "Planning",
     description:
-      "Detailed project roadmap, technical specifications, and timeline to ensure clarity from day one.",
+      "Define architecture, scope boundaries, milestones, and technical delivery roadmap.",
     color: "#3AA29E",
   },
   {
@@ -32,7 +32,7 @@ const steps = [
     number: "03",
     title: "Design",
     description:
-      "Creating stunning, user-focused interfaces that align with your brand and convert visitors.",
+      "Design practical interfaces for business users, customers, and decision-makers across key journeys.",
     color: "#E87652",
   },
   {
@@ -40,7 +40,7 @@ const steps = [
     number: "04",
     title: "Development",
     description:
-      "Building robust, scalable solutions using modern technologies and best practices.",
+      "Implement secure, maintainable code with modular architecture and integration-ready components.",
     color: "#9B7ABF",
   },
   {
@@ -48,7 +48,7 @@ const steps = [
     number: "05",
     title: "Testing",
     description:
-      "Rigorous quality assurance to ensure flawless performance across all devices and scenarios.",
+      "Validate functionality, performance, and reliability across devices and business-critical scenarios.",
     color: "#5B9BED",
   },
   {
@@ -56,7 +56,7 @@ const steps = [
     number: "06",
     title: "Launch & Support",
     description:
-      "Seamless deployment and ongoing maintenance to keep your platform running smoothly.",
+      "Controlled production rollout with post-launch support, monitoring, and iterative enhancement.",
     color: "#3AA29E",
   },
 ];
@@ -76,10 +76,11 @@ export function Process() {
             How We Work
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mt-4 mb-6 text-balance">
-            Our Development Process
+            Structured Delivery Process
           </h2>
           <p className="text-slate-600 max-w-2xl mx-auto text-lg">
-            A proven methodology that delivers results on time, every time.
+            A practical process built for clarity, accountability, and quality
+            from planning to production.
           </p>
         </motion.div>
 

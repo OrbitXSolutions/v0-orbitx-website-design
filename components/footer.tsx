@@ -77,17 +77,13 @@ export function Footer() {
                 className="w-10 h-10"
               />
               <span className="text-2xl font-brand font-semibold tracking-tight">
-                <span className="text-[#3AA29E]">Orbit</span>
-                <span className="text-[#5B9BED]">X</span>
-                <span className="ml-1">
-                  <span className="text-[#E87652]">Solu</span>
-                  <span className="text-[#9B7ABF]">tions</span>
-                </span>
+                <span className="text-white">OrbitX Solutions</span>
               </span>
             </Link>
             <p className="text-slate-400 text-sm leading-relaxed max-w-sm mb-6">
-              Dubai-based software house delivering custom web platforms, AI
-              solutions, and enterprise systems for businesses across the UAE.
+              Dubai-based software house delivering custom websites, business
+              systems, and scalable digital platforms for UAE companies and
+              enterprises.
             </p>
             <div className="flex items-center gap-4">
               {socialLinks.map((social) => (

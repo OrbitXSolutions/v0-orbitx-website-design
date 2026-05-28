@@ -21,7 +21,7 @@ export function Contact() {
           transition={{ duration: 0.6 }}
         >
           <span className="text-[#E87652] text-sm font-medium uppercase tracking-wider">
-            Get Started
+            Consultation
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mt-4 mb-6 text-balance">
             Let&apos;s Build Your Next
@@ -29,8 +29,9 @@ export function Contact() {
             <span className="text-[#5B9BED]">Digital Platform</span>
           </h2>
           <p className="text-slate-600 text-lg mb-10 max-w-2xl mx-auto">
-            Ready to transform your business with a custom digital solution? Get
-            in touch with our team to discuss your project.
+            Planning a website, business system, or enterprise platform? Speak
+            with our UAE team and get practical technical guidance for your next
+            phase.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -40,7 +41,7 @@ export function Contact() {
               rel="noopener noreferrer"
               className="group px-8 py-4 bg-[#5B9BED] text-white rounded-xl font-medium text-base hover:bg-[#4A8AD8] transition-all flex items-center gap-2 w-full sm:w-auto justify-center shadow-lg shadow-[#5B9BED]/20"
             >
-              Start Your Project
+              Schedule Consultation
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </a>
             <a
@@ -49,8 +50,8 @@ export function Contact() {
               rel="noopener noreferrer"
               className="px-8 py-4 bg-white text-slate-900 rounded-xl font-medium text-base hover:bg-slate-100 transition-all border border-slate-200 flex items-center gap-2 w-full sm:w-auto justify-center shadow-sm"
             >
-              <MessageCircle className="w-4 h-4 text-[#25D366]" />
-              WhatsApp Contact
+              <MessageCircle className="w-4 h-4 text-[#5B9BED]" />
+              Request Proposal
             </a>
           </div>
         </motion.div>

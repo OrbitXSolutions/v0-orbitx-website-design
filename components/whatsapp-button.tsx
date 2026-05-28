@@ -26,10 +26,10 @@ export function WhatsAppButton() {
         <motion.div
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
-          className="relative w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-lg shadow-[#25D366]/30 hover:shadow-xl hover:shadow-[#25D366]/40 transition-shadow"
+          className="relative w-14 h-14 bg-[#5B9BED] rounded-full flex items-center justify-center shadow-lg shadow-[#5B9BED]/30 hover:shadow-xl hover:shadow-[#5B9BED]/40 transition-shadow"
         >
           {/* Pulse animation */}
-          <span className="absolute inset-0 rounded-full bg-[#25D366] animate-ping opacity-20" />
+          <span className="absolute inset-0 rounded-full bg-[#5B9BED] animate-ping opacity-20" />
           
           {/* WhatsApp Icon */}
           <svg

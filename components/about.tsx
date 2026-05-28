@@ -50,44 +50,43 @@ export function About() {
               About OrbitX
             </span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mt-4 mb-6">
-              Your Partner in
+              Built For Business-Critical
               <br />
-              <span className="text-[#5B9BED]">Digital Excellence</span>
+              <span className="text-[#5B9BED]">Digital Systems</span>
             </h2>
             <div className="space-y-4 text-slate-600 leading-relaxed">
               <p>
                 OrbitX Solutions is a Dubai-based software house focused on
-                delivering high-quality digital platforms. We specialize in
-                custom web development, enterprise systems, and AI-powered
-                solutions.
+                delivering custom websites, systems, and digital platforms for
+                businesses and enterprises across the UAE.
               </p>
               <p>
                 Our team combines technical expertise with a deep understanding
-                of business needs in the UAE market. We help
-                organizations—from startups to government entities—build
-                scalable systems and achieve digital transformation.
+                of business operations, compliance expectations, and scalable
+                software architecture. We work with organizations that need
+                reliable digital products, not temporary fixes.
               </p>
               <p>
-                With a commitment to quality and innovation, we&apos;ve
-                successfully delivered over 50 projects, helping businesses
-                across the region grow and thrive in the digital age.
+                Our engineering background spans modern web delivery, .NET
+                ecosystems, cloud deployments, and integration-led architecture
+                for evolving business requirements.
               </p>
             </div>
 
             <div className="mt-8 grid grid-cols-3 gap-8">
               <div>
-                <div className="text-3xl font-bold text-[#5B9BED]">50+</div>
-                <div className="text-sm text-slate-500">Projects</div>
+                <div className="text-3xl font-bold text-[#5B9BED]">10+</div>
+                <div className="text-sm text-slate-500">Years Engineering Experience</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-[#3AA29E]">30+</div>
+                <div className="text-3xl font-bold text-[#3AA29E]">UAE</div>
                 <div className="text-sm text-slate-500">
-                  Happy Clients
+                  Market Understanding
                 </div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-[#E87652]">100%</div>
-                <div className="text-sm text-slate-500">Satisfaction</div>
+                <div className="text-3xl font-bold text-[#E87652]">.NET + Next.js</div>
+                <div className="text-sm text-slate-500">Modern Delivery Stack</div>
               </div>
             </div>
           </motion.div>

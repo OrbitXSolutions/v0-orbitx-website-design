@@ -8,39 +8,39 @@ const reasons = [
     icon: Shield,
     title: "Custom-Built Solutions",
     description:
-      "Every project is built from scratch to match your unique business requirements. No templates, no shortcuts.",
+      "Every platform is engineered around your workflows, approvals, and business model, not pre-built themes.",
     color: "#5B9BED",
   },
   {
     icon: Zap,
     title: "Enterprise-Level Architecture",
     description:
-      "We design systems that can scale with your business, handling thousands of users without breaking a sweat.",
+      "Architecture decisions are made for long-term stability, integration readiness, and operational scale.",
     color: "#E87652",
   },
   {
     icon: Target,
     title: "Scalable & Secure Systems",
     description:
-      "Security is built into every layer of our solutions, protecting your data and your customers.",
+      "Security, performance, and maintainability are treated as core requirements from day one.",
     color: "#3AA29E",
   },
   {
     icon: Users,
     title: "Strong Technical Expertise",
     description:
-      "Our team brings years of experience across multiple industries and technologies.",
+      "Our team combines deep engineering practice with practical delivery for UAE organizations.",
     color: "#9B7ABF",
   },
 ];
 
 const benefits = [
-  "No templates or pre-built themes",
-  "Full ownership of your code",
-  "Ongoing support & maintenance",
-  "Transparent communication",
-  "On-time delivery guarantee",
-  "UAE-focused expertise",
+  "Architecture-first delivery",
+  "Full ownership of your codebase",
+  "API-first integration mindset",
+  "Structured delivery governance",
+  "Long-term maintainability",
+  "UAE market and operations context",
 ];
 
 export function WhyOrbitX() {
@@ -58,17 +58,17 @@ export function WhyOrbitX() {
             transition={{ duration: 0.6 }}
           >
             <span className="text-[#5B9BED] text-sm font-medium uppercase tracking-wider">
-              Why Choose Us
+              Why OrbitX
             </span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mt-4 mb-6">
-              Built Different.
+              Trusted Technical Partner
               <br />
-              <span className="text-[#3AA29E]">Built Better.</span>
+              <span className="text-[#3AA29E]">For Complex Digital Delivery</span>
             </h2>
             <p className="text-slate-600 text-lg mb-8 leading-relaxed">
-              We don&apos;t just build websites. We engineer digital platforms
-              that drive real business results. Our focus is on creating systems
-              that last.
+              OrbitX helps businesses build digital platforms that support real
+              operations, growth, and long-term maintainability, not short-term
+              demos.
             </p>
 
             <div className="grid sm:grid-cols-2 gap-4">

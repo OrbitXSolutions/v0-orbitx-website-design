@@ -1,35 +1,42 @@
-# v0-orbitx-website-design
+# OrbitX Solutions Website
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [v0](https://v0.app).
+Production website for OrbitX Solutions, a Dubai-based software house focused on custom websites, business systems, and scalable digital platforms.
 
-## Built with v0
+## Stack
 
-This repository is linked to a [v0](https://v0.app) project. You can continue developing by visiting the link below -- start new chats to make changes, and v0 will push commits directly to this repo. Every merge to `main` will automatically deploy.
+- Next.js (App Router)
+- React + TypeScript
+- Tailwind CSS
+- Framer Motion
 
-[Continue working on v0 →](https://v0.app/chat/projects/prj_DYvKKwnSC9DffX1018A5OEhPSblg)
+## Development
 
-## Getting Started
-
-First, run the development server:
+Use one package manager consistently.
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Production Build
 
-## Learn More
+```bash
+pnpm build
+pnpm start
+```
 
-To learn more, take a look at the following resources:
+## Deployment Notes
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-- [v0 Documentation](https://v0.app/docs) - learn about v0 and how to use it.
+- Ensure the production domain points to the latest main deployment.
+- Clear browser cache after major content releases.
+- Homepage HTML is configured with no-store headers to reduce stale content mismatches.
+- Keep only one active production project/environment in Vercel for this domain.
 
-<a href="https://v0.app/chat/api/kiro/clone/AbdallahR99/v0-orbitx-website-design" alt="Open in Kiro"><img src="https://pdgvvgmkdvyeydso.public.blob.vercel-storage.com/open%20in%20kiro.svg?sanitize=true" /></a>
+## Content and SEO Direction
+
+- Positioning: premium UAE software house
+- Focus: custom websites, enterprise systems, digital platforms
+- Avoid generic template wording and unrealistic statistics
+- Keep metadata, schema, and service/case-study content aligned with real capabilities

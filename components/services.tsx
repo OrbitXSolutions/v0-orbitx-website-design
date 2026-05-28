@@ -8,64 +8,106 @@ import {
   ShoppingCart,
   Globe,
   Lightbulb,
+  Workflow,
+  Network,
 } from "lucide-react";
 
 const services = [
   {
-    icon: Code2,
-    title: "Custom Web Development",
+    icon: Globe,
+    title: "Corporate Websites",
     description:
-      "Build high-performance, scalable web applications tailored to business needs.",
+      "Professional, high-performance websites built around your brand, market positioning, and lead generation goals.",
     features: [
-      "Custom architecture (no templates)",
-      "Secure & scalable systems",
-      "Next.js & .NET solutions",
+      "Clear service and capability positioning",
+      "SEO-friendly structure and speed",
+      "Business value: stronger digital credibility",
     ],
     color: "#5B9BED",
   },
   {
-    icon: Building2,
-    title: "Enterprise Systems Development",
+    icon: Code2,
+    title: "Custom Web Applications",
     description:
-      "Design and build complex systems for organizations and government entities.",
+      "Tailored web applications designed around your workflows, approvals, and operational requirements.",
     features: [
-      "Workflow automation",
-      "Role-based architecture",
-      "High scalability",
+      "Role-based access and permissions",
+      "Secure architecture and maintainable codebase",
+      "Business value: reduced manual operations",
     ],
     color: "#3AA29E",
+  },
+  {
+    icon: Building2,
+    title: "Business Management Systems",
+    description:
+      "Internal systems that centralize operations, data visibility, and process control across teams.",
+    features: [
+      "Operations and workflow management",
+      "Reporting and process visibility",
+      "Business value: improved efficiency and control",
+    ],
+    color: "#9B7ABF",
+  },
+  {
+    icon: Workflow,
+    title: "Customer Portals",
+    description:
+      "Self-service client portals for onboarding, support requests, document exchange, and account management.",
+    features: [
+      "Secure client access",
+      "Streamlined communication flows",
+      "Business value: better customer experience",
+    ],
+    color: "#E87652",
+  },
+  {
+    icon: ShoppingCart,
+    title: "E-Commerce Platforms",
+    description:
+      "Commerce platforms that support product growth, reliable order flow, and operational scalability.",
+    features: [
+      "Payment and logistics integration",
+      "Order and inventory workflows",
+      "Business value: scalable online revenue channels",
+    ],
+    color: "#5B9BED",
   },
   {
     icon: Brain,
     title: "AI-Powered Solutions",
     description:
-      "Integrate AI into business workflows for smarter operations.",
-    features: ["AI automation", "Smart analytics", "Intelligent systems"],
-    color: "#9B7ABF",
+      "Practical AI capabilities integrated into real business workflows, not isolated demos.",
+    features: [
+      "Process automation and assistive AI",
+      "Search, recommendations, and analytics",
+      "Business value: faster decisions and operations",
+    ],
+    color: "#3AA29E",
   },
   {
-    icon: ShoppingCart,
-    title: "E-commerce Development",
+    icon: Network,
+    title: "API & System Integrations",
     description:
-      "Build modern online stores with conversion-focused design.",
-    features: ["Custom checkout", "Payment integration", "Admin dashboards"],
+      "Connect your platform with ERP, CRM, payment, logistics, and third-party services through reliable integrations.",
+    features: [
+      "Secure API architecture",
+      "Data synchronization and orchestration",
+      "Business value: connected business systems",
+    ],
     color: "#E87652",
   },
   {
-    icon: Globe,
-    title: "Business Websites & Platforms",
-    description:
-      "Professional websites designed to convert visitors into customers.",
-    features: ["High-end UI/UX", "SEO-ready", "Fast performance"],
-    color: "#5B9BED",
-  },
-  {
     icon: Lightbulb,
-    title: "Digital Transformation & Consulting",
+    title: "Technical Consulting & Architecture",
     description:
-      "Help businesses move into digital systems and optimize processes.",
-    features: ["System planning", "Process optimization", "Tech consulting"],
-    color: "#3AA29E",
+      "Architecture advisory for organizations planning new digital platforms or modernizing legacy systems.",
+    features: [
+      "Solution architecture and roadmap",
+      "Technology and delivery planning",
+      "Business value: lower technical risk",
+    ],
+    color: "#9B7ABF",
   },
 ];
 
@@ -87,11 +129,11 @@ export function Services() {
             What We Do
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mt-4 mb-6 text-balance">
-            Enterprise-Grade Solutions
+            Custom Software Services For UAE Businesses
           </h2>
           <p className="text-slate-600 max-w-2xl mx-auto text-lg">
-            We deliver custom software solutions that drive business growth and
-            digital transformation.
+            We design and build business-oriented platforms that align with real
+            operations, growth plans, and enterprise standards.
           </p>
         </motion.div>
 

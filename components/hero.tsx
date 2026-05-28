@@ -1,15 +1,23 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Play } from "lucide-react";
+import { ArrowRight, CheckCircle2, Play } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+
+const trustPoints = [
+  "Custom-built solutions",
+  "No templates",
+  "Scalable architecture",
+  "UAE-based team",
+  "Enterprise mindset",
+];
 
 export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 bg-white">
       {/* Subtle grid pattern */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,_#E2E8F0_1px,_transparent_1px),linear-gradient(to_bottom,_#E2E8F0_1px,_transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_110%)] opacity-40" />
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,_#E8EEF5_1px,_transparent_1px),linear-gradient(to_bottom,_#E8EEF5_1px,_transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_110%)] opacity-28 blur-[0.5px]" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -33,9 +41,8 @@ export function Hero() {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-4xl sm:text-5xl md:text-6xl font-bold text-slate-900 leading-tight tracking-tight mb-6 text-balance"
             >
-              Building Scalable{" "}
-              <span className="text-[#5B9BED]">Digital Platforms</span> for Modern
-              Businesses
+              Dubai-Based Software House Building{" "}
+              <span className="text-[#5B9BED]">Custom Digital Platforms</span>
             </motion.h1>
 
             <motion.p
@@ -44,10 +51,27 @@ export function Hero() {
               transition={{ duration: 0.8, delay: 0.6 }}
               className="text-lg md:text-xl text-slate-600 max-w-xl mb-10 text-pretty"
             >
-              Custom web platforms, AI solutions, and enterprise systems
-              tailored for growth. We help businesses in the UAE transform
-              digitally.
+              OrbitX Solutions helps businesses and enterprises build scalable
+              websites, systems, portals, and custom digital platforms tailored
+              to real business operations.
             </motion.p>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.7 }}
+              className="mb-10 flex flex-wrap gap-x-6 gap-y-3"
+            >
+              {trustPoints.map((point) => (
+                <span
+                  key={point}
+                  className="inline-flex items-center gap-2 text-sm text-slate-600"
+                >
+                  <CheckCircle2 className="w-4 h-4 text-[#3AA29E]" />
+                  {point}
+                </span>
+              ))}
+            </motion.div>
 
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -61,7 +85,7 @@ export function Hero() {
                 rel="noopener noreferrer"
                 className="group px-8 py-4 bg-[#5B9BED] text-white rounded-xl font-medium text-base hover:bg-[#4A8AD8] transition-all flex items-center gap-2 shadow-lg shadow-[#5B9BED]/20"
               >
-                Start Your Project
+                Book a Free Consultation
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </a>
               <Link
@@ -69,32 +93,8 @@ export function Hero() {
                 className="px-8 py-4 bg-white text-slate-900 rounded-xl font-medium text-base hover:bg-slate-50 transition-all border border-slate-200 flex items-center gap-2 shadow-sm"
               >
                 <Play className="w-4 h-4" />
-                View Our Work
+                View Our Projects
               </Link>
-            </motion.div>
-
-            {/* Stats */}
-            <motion.div
-              initial={{ opacity: 0, y: 40 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 1 }}
-              className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6"
-            >
-              {[
-                { value: "50+", label: "Projects Delivered", color: "#5B9BED" },
-                { value: "10+", label: "Years Experience", color: "#3AA29E" },
-                { value: "100%", label: "Client Satisfaction", color: "#E87652" },
-                { value: "UAE", label: "Based in Dubai", color: "#9B7ABF" },
-              ].map((stat, index) => (
-                <div key={index} className="text-left">
-                  <div className="text-2xl md:text-3xl font-bold mb-1" style={{ color: stat.color }}>
-                    {stat.value}
-                  </div>
-                  <div className="text-sm text-slate-500">
-                    {stat.label}
-                  </div>
-                </div>
-              ))}
             </motion.div>
           </div>
 
@@ -143,10 +143,10 @@ export function Hero() {
                   </div>
                   <div>
                     <div className="text-sm font-medium text-slate-900">
-                      Project Delivered
+                      Custom-Built Delivery
                     </div>
                     <div className="text-xs text-slate-500">
-                      Just now
+                      Architecture-led approach
                     </div>
                   </div>
                 </div>
@@ -177,10 +177,10 @@ export function Hero() {
                   </div>
                   <div>
                     <div className="text-sm font-medium text-slate-900">
-                      Performance
+                      Enterprise-Ready
                     </div>
                     <div className="text-xs text-[#3AA29E] font-medium">
-                      +127% Growth
+                      Security and scalability first
                     </div>
                   </div>
                 </div>
